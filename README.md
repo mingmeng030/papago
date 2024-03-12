@@ -1,4 +1,4 @@
-# Papago clond coding
+# Papago clone coding
 
 <br>
 

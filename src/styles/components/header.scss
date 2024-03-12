@@ -1,0 +1,17 @@
+@import "../base/variable.scss";
+
+.header {
+  height: 75px;
+  display: flex;
+  align-items: center;
+  img {
+    height: 33px;
+    margin: 0 30px;
+  }
+  span {
+    font-size: 17px;
+    line-height: 20px;
+    font-weight: 400;
+  }
+  border-bottom: 1px solid $border-color;
+}

@@ -1,8 +1,6 @@
-# Papago clone coding
+# 🦜Papago clone coding
 
-<br>
-
-## 기능 설명
+## 🔧기능 설명
 
 - 최소 기능 (MVP)
   - 입력 내용 번역
@@ -19,7 +17,7 @@
 
 <br>
 
-## 컨벤션 (Convention)
+## 👩🏻‍💻컨벤션 (Convention)
 
 ### Commit 전략 
 

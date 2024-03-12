@@ -42,7 +42,7 @@
 | ---------- | -------------------------------- |
 | 환경세팅   | React CRA                         |
 | 스타일링   | CSS, SCSS                         |
-| 상태관리   | Redux, Redux-Thunk, Redux-Toolkit |
+| 상태관리   | Redux, Redux-Thunk                |
 | 코드통합   | Prettier                          |
 | API 통신  | Axios                             |
 

@@ -1,0 +1,145 @@
+@import "../base/variable.scss";
+@import "../base/mixin.scss";
+
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  min-height: 268px;
+
+  .card-top,
+  .card-bottom {
+    height: 55px;
+    line-height: 55px;
+  }
+
+  .card-top {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    border-radius: 12px 12px 0 0;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    button {
+      font-size: 17px;
+      background-color: $color-white;
+    }
+    .card-src-exchange-btn {
+      img {
+        width: 23px;
+        height: 23px;
+      }
+    }
+  }
+  .card-mid {
+    padding: 5px;
+    font-size: 20px;
+    textarea {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .card-bottom {
+    border-radius: 0 0 12px 12px;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: space-between;
+
+    .card-bottom-copy-btn {
+      border-radius: 0 0 0 12px;
+    }
+    .card-bottom-copy-btn,
+    .card-bottom-share-btn {
+      background-color: $color-white;
+      padding: 10px 15px;
+      border-right: 1px solid rgba(0, 0, 0, 0.05);
+      img {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+}
+
+@include desktop {
+  .card {
+    margin: 0 4px;
+    width: 50%;
+  }
+  .card-mid {
+    height: 225px;
+  }
+  .card-tg-btn-container.src {
+    display: none;
+  }
+}
+
+@include tablet {
+  .card {
+    margin: 10px;
+    width: 100%;
+    .card-top {
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+
+      .card-src-exchange-btn {
+        border: 1px solid $border-color;
+        border-radius: 20px;
+        padding: 3px 10px;
+
+        img {
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+
+    .card-mid {
+      height: 215px;
+    }
+  }
+}
+
+@include mobile {
+  .card {
+    width: 100%;
+    margin: 0;
+    border: 0;
+    border-radius: 0;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+    min-height: 268px;
+    padding-bottom: 62px;
+
+    .card-top {
+      display: flex;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+      position: relative;
+
+      .card-src-exchange-btn {
+        border: 1px solid $border-color;
+        border-radius: 20px;
+        padding: 3px 10px;
+
+        img {
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+    .card-mid {
+      height: 115px;
+    }
+    .card-bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      border-top: 0;
+      border-radius: 0;
+      border-bottom: 1px solid $border-color;
+    }
+  }
+}

@@ -1,0 +1,66 @@
+@import "../base/variable.scss";
+@import "../base/mixin.scss";
+
+.card-bottom-translate-btn {
+  width: 134px;
+  background-color: $color-green;
+  color: $color-white;
+  border-radius: 0 0 12px 0;
+  font-size: 20px;
+}
+.card-bottom-translate-btn {
+  .short {
+    display: none;
+  }
+}
+@include desktop {
+  .card-tg-btn-container.src {
+    display: none;
+  }
+}
+
+@include tablet {
+  .card-src-btn-container.src,
+  .card-tg-btn-container.src {
+    text-align: center;
+    width: 50%;
+  }
+  .card-tg-btn-container.src {
+    display: block;
+  }
+}
+
+@include mobile {
+  .card-src-btn-container.src,
+  .card-tg-btn-container.src {
+    text-align: center;
+    width: 50%;
+  }
+  .card-tg-btn-container.src {
+    display: block;
+  }
+
+  .card-bottom-translate-btn {
+    background-color: $color-green;
+    border-radius: 20px;
+    box-shadow: 0 5px 10px 0 rgba(0, 215, 88, 0.2),
+      0 0 1px 0 rgba(0, 0, 0, 0.06);
+    font-size: 15px;
+    font-weight: 700;
+    height: 37px;
+    line-height: 38px;
+    margin-right: 0;
+    min-width: 74px;
+    // padding: 0 7px 0 13px;
+    white-space: nowrap;
+    width: inherit;
+  }
+  .card-bottom-translate-btn {
+    .short {
+      display: block;
+    }
+    .long {
+      display: none;
+    }
+  }
+}

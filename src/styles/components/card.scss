@@ -2,11 +2,17 @@
 @import "../base/mixin.scss";
 
 .card {
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 12px;
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
   min-height: 268px;
+  .card-wrapper {
+    background-color: #fff;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+    border: $card-border;
+    border-radius: $border-radius;
+  }
+  .focus {
+    border: $card-border-focus;
+    border-radius: $border-radius;
+  }
 
   .card-top,
   .card-bottom {
@@ -26,6 +32,9 @@
       font-size: 17px;
       background-color: $color-white;
     }
+    .card-arrow-btn {
+      margin-left: 5px;
+    }
     .card-src-exchange-btn {
       img {
         width: 23px;
@@ -34,15 +43,10 @@
     }
   }
   .card-mid {
-    padding: 5px;
-    font-size: 20px;
-    textarea {
-      width: 100%;
-      height: 100%;
-    }
+    padding: 25px 20px;
   }
+
   .card-bottom {
-    border-radius: 0 0 12px 12px;
     border-top: 1px solid rgba(0, 0, 0, 0.05);
     display: flex;
     justify-content: space-between;
@@ -69,7 +73,7 @@
     width: 50%;
   }
   .card-mid {
-    height: 225px;
+    min-height: $textArea-height-desktop;
   }
   .card-tg-btn-container.src {
     display: none;
@@ -86,7 +90,7 @@
       position: relative;
 
       .card-src-exchange-btn {
-        border: 1px solid $border-color;
+        border: $card-border;
         border-radius: 20px;
         padding: 3px 10px;
 
@@ -98,7 +102,7 @@
     }
 
     .card-mid {
-      height: 215px;
+      min-height: $textArea-height-tablet;
     }
   }
 }
@@ -107,11 +111,19 @@
   .card {
     width: 100%;
     margin: 0;
-    border: 0;
-    border-radius: 0;
-    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
-    min-height: 268px;
-    padding-bottom: 62px;
+    min-height: 155px;
+
+    .card-wrapper {
+      border: 0;
+      border-radius: 0;
+      box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+    }
+
+    .card-top,
+    .card-bottom {
+      height: 45px;
+      line-height: 45px;
+    }
 
     .card-top {
       display: flex;
@@ -119,7 +131,7 @@
       position: relative;
 
       .card-src-exchange-btn {
-        border: 1px solid $border-color;
+        border: $card-border;
         border-radius: 20px;
         padding: 3px 10px;
 
@@ -130,16 +142,30 @@
       }
     }
     .card-mid {
-      height: 115px;
+      min-height: $textArea-height-mobile;
     }
     .card-bottom {
       display: flex;
       align-items: center;
       justify-content: space-between;
+      padding-bottom: 10px;
 
       border-top: 0;
       border-radius: 0;
-      border-bottom: 1px solid $border-color;
+      border-bottom: $card-border;
+
+      .card-bottom-copy-btn,
+      .card-bottom-share-btn {
+        background-color: $color-white;
+        padding: 10px;
+        border: 0;
+        border-radius: 0;
+
+        img {
+          width: 25px;
+          height: 25px;
+        }
+      }
     }
   }
 }

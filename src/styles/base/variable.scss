@@ -1,15 +1,21 @@
 $color-white: #fff;
 $color-black: #000;
 $color-green: #1eda69;
-$fontColor-green: #0fb74c;
 $color-blue: #1caafc;
+$color-textarea: #999999;
+$fontColor-green: #0fb74c;
 
 $bgc-footer: #fbfbfb;
 
-$border-color: #ddd;
 $border-radius: 12px;
 $box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
-$border-style: 1px solid #ddd;
+$layout-border: 1px solid #ddd;
+$card-border: 1px solid rgba(0, 0, 0, 0.1);
+$card-border-focus: 1px solid #21dc6d;
+
+$textArea-height-desktop: 135px;
+$textArea-height-tablet: 135px;
+$textArea-height-mobile: 70px;
 
 $font-family: -apple-system, BlinkMacSystemFont, Apple SD Gothic Neo, helvetica,
   noto, notojp, notokr, Microsoft YaHei, Malgun Gothic, 맑은 고딕, Dotum, 돋움,

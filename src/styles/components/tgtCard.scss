@@ -1,6 +1,10 @@
 @import "../base/variable.scss";
 @import "../base/mixin.scss";
 
+.card-mid-content {
+  padding: 15px;
+  font-size: 20px;
+}
 @include desktop {
   .card-tg-btn-container.tgt {
     display: block;
@@ -14,7 +18,11 @@
 }
 
 @include mobile {
+  .card-top.tgt,
   .card-tg-btn-container.tgt {
     display: none;
+  }
+  .card-mid-content {
+    font-size: 18px;
   }
 }

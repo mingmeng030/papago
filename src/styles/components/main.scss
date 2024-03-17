@@ -6,8 +6,7 @@
 
 @include desktop {
   .main {
-    background-color: rgb(221, 201, 201);
-    padding: 60px 5vw;
+    padding: 55px 5vw;
   }
   .card-container {
     display: flex;
@@ -16,18 +15,12 @@
 
 @include tablet {
   .main {
-    background-color: rgb(192, 214, 194);
-    padding: 60px 40px;
-  }
-  .card-container {
+    padding: 35px 40px;
   }
 }
 
 @include mobile {
   .main {
-    background-color: aliceblue;
     padding: 0;
-  }
-  .card-container {
   }
 }

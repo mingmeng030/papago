@@ -11,7 +11,7 @@ $footer-side-margin: 5vw;
   align-items: center;
   justify-content: space-between;
   padding: 20px $footer-side-margin;
-  border-bottom: 1px solid $border-color;
+  border-bottom: $layout-border;
   line-height: 20px;
 
   .footer-top__front,

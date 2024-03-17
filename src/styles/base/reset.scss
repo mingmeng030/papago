@@ -36,3 +36,7 @@ a {
 a:visited {
   color: black;
 }
+
+textarea:focus {
+  outline: none;
+}
